@@ -12,8 +12,8 @@ for (i = 10; i >= 1; i--){
 //Escribe un programa que pida dos números, determinar cuál es el mayor y
 //sacarlo por consola y por la página web. 
 /*
-var num1 = parseInt(prompt("Ingrese el primer número: ")); 
-var num2 = parseInt(prompt("Ingrese el segundo número: ")); 
+let num1 = parseInt(prompt("Ingrese el primer número: ")); //No es necesario el parseInt porque no voy a utilizar la variable en una operación matemática.
+let num2 = parseInt(prompt("Ingrese el segundo número: ")); 
 
 if (num1 > num2){
     console.log("El " + num1 + " es mayor");
@@ -29,8 +29,8 @@ if (num1 > num2){
 //(console.log) y en la página web (document.write).
 
 /*
-var num1 = parseInt(prompt("Ingrese el primer número: "));
-var num2 = parseInt(prompt("Ingrese el segundo número: "));
+let num1 = parseInt(prompt("Ingrese el primer número: "));
+let num2 = parseInt(prompt("Ingrese el segundo número: "));
 
 var resultado = num1 + num2; 
 
@@ -45,10 +45,10 @@ document.write("La suma de los dos números es: " + resultado);
 //(documento.write)).
 
 /*
-var nombre = prompt("Ingresa tu nombre: ");
-var edad = parseInt(prompt("Ingresa tu edad: "));
-var estatura = parseFloat(prompt("Ingresa tu estatura: "));
-var estadoCivil = prompt("Ingrese si es soltero o casado: ");
+let nombre = prompt("Ingresa tu nombre: ");
+let edad = parseInt(prompt("Ingresa tu edad: "));
+let estatura = parseFloat(prompt("Ingresa tu estatura: "));
+let estadoCivil = prompt("Ingrese si es soltero o casado: ");
 
 saludoLinea = `Nombre: ${nombre} + Edad: ${edad} + Estatura: ${estatura} + Estado Civil: ${estadoCivil}`
 
@@ -73,7 +73,7 @@ if (estadoCivil == "casado"){
 //Punto 5
 //Escribe un programa que pida una palabra y devuelva el número de caracteres que tiene la palabra.
 /*
-var palabra = prompt("Ingrese una palabra: ");
+let palabra = prompt("Ingrese una palabra: ");
 alert("La palabra " + palabra + " tiene " + palabra.length + " letras");
 console.log("La palabra " + palabra + " tiene " + palabra.length + " letras");
 */
@@ -83,7 +83,7 @@ console.log("La palabra " + palabra + " tiene " + palabra.length + " letras");
 //estos meses en la consola (console.log) y en la página web (document.write).
 /*
 document.write("Los meses del año son: ");
-var meses = ["Enero", " Febrero", " Marzo", " Abril", " Mayo", " Junio", " Julio", " Agosto", " Septiembre", " Octubre", " Noviembre", " Diciembre"]
+let meses = ["Enero", " Febrero", " Marzo", " Abril", " Mayo", " Junio", " Julio", " Agosto", " Septiembre", " Octubre", " Noviembre", " Diciembre"]
 document.write(meses);
 console.log(meses);
 */
@@ -94,7 +94,7 @@ console.log(meses);
 //muy insuficiente», si se introduce un 7, el mensaje podría ser: «El 7 es un notable bajo», etc.
 
 /*
-var nota = parseInt(prompt("Ingrese una nota: "));
+let nota = parseInt(prompt("Ingrese una nota: "));
 
 switch(nota){
     case 1: 
@@ -139,7 +139,7 @@ switch(nota){
 
 /*
 alert("Escribe un número y te diré si es par o impar");
-var num = parseInt(prompt("Ingrese el número: "));
+let num = parseInt(prompt("Ingrese el número: "));
 while(num != 0){
      if (num % 2 == 0){
         alert("El número es par");
@@ -156,8 +156,8 @@ while(num != 0){
 //inversa.
 
 /*
-var cadena = 'hola mija'; 
-var palabras = cadena.split(""); //Convierte en un array cada uno de los caracteres. 
+let cadena = 'hola mija'; 
+let palabras = cadena.split(""); //Convierte en un array cada uno de los caracteres. 
 console.log(palabras.reserve()); //Muestra el array de manera inversa 
 */
 
@@ -174,7 +174,7 @@ console.log(arr);
 //«teléfono». Luego debe imprimir todos los datos por consola (console.log) y en la página web 
 
 /*
-var Persona = {
+let Persona = {
     nombre: "Ana", //Las propiedades se separan por comas. 
     edad: 21,
     télefono: 642581502,
